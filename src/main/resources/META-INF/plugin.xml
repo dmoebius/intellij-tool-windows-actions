@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>ToolWindowsActions</id>
+    <name>Tool Windows Actions</name>
+    <vendor email="dirk.moebius@scoop-software.de">Dirk Möbius</vendor>
+    <description><![CDATA[Adds one action to IntelliJ IDEA: 'Hide all bottom tool windows' (Ctrl+Esc)
+    <p>
+    This is a fork of the SimpleActions plugin by Etienne Studer, which is no longer maintained.
+    </p>]]></description>
+    <version>1.0</version>
+    <idea-version since-build="5000"/>
+    <depends>com.intellij.modules.lang</depends>
+    <actions>
+        <action id="ToolWindowsActions.HideBottomToolWindows"
+                class="de.dmoebius.intellij.actions.HideBottomToolWindows"
+                text="Hide Bottom Tool Windows"
+                description="Hides all bottom tool windows">
+            <add-to-group group-id="WindowMenu" anchor="after" relative-to-action="ToolWindowsGroup"/>
+            <keyboard-shortcut first-keystroke="control ESCAPE" keymap="$default"/>
+        </action>
+    </actions>
+</idea-plugin>

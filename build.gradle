@@ -1,0 +1,32 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.4.10'
+}
+
+group 'de.dmoebius.intellij'
+version '1.0'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+// See https://github.com/JetBrains/gradle-intellij-plugin/
+intellij {
+    version '2019.2.3'
+}
+patchPluginXml {
+    changeNotes """
+      <dl>
+        <dt>Version 1.0</dt>
+        <dd>initial release</dd>
+      </dl>"""
+}
+publishPlugin {
+    token intellijPublishToken
+}
