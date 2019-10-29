@@ -12,3 +12,21 @@ This plugin is a fork of the [SimpleActions plugin](https://plugins.jetbrains.co
 by Etienne Studer. It has exactly the same action, but it also bundles
 some other actions, which don't work anymore and produce errors. It's
 not maintained anymore.
+
+### Build & test
+
+`./gradlew runIde`
+
+### Publish plugin
+
+`./gradlew publishPlugin`
+
+but you'll need a deploy key, aka "Jetbrains Hub permanent token".
+Add file `gradle.properties` to the project's root with content:
+```
+intellijPublishToken=<your-token>
+```
+Don't commit this file!
+
+See [Publishing Plugins with Gradle](https://www.jetbrains.org/intellij/sdk/docs/tutorials/build_system/deployment.html#providing-your-hub-permanent-token-to-gradle)
+for more informations.
