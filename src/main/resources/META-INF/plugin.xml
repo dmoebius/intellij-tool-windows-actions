@@ -1,12 +1,12 @@
 <idea-plugin>
     <id>ToolWindowsActions</id>
     <name>Tool Windows Actions</name>
-    <vendor email="dirk.moebius@scoop-software.de">Dirk Möbius</vendor>
+    <vendor email="dirk.moebius@scoop-software.de" url="https://github.com/dmoebius/intellij-tool-windows-actions">Dirk Möbius</vendor>
     <description><![CDATA[Adds one action to IntelliJ IDEA: 'Hide all bottom tool windows' (Ctrl+Esc)
     <p>
     This is a fork of the SimpleActions plugin by Etienne Studer, which is no longer maintained.
     </p>]]></description>
-    <version>1.0</version>
+    <version>1.0.1</version>
     <idea-version since-build="5000"/>
     <depends>com.intellij.modules.lang</depends>
     <actions>

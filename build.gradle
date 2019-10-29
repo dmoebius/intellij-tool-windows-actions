@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'de.dmoebius.intellij'
-version '1.0'
+version '1.0.1'
 
 sourceCompatibility = 1.8
 
@@ -23,6 +23,8 @@ intellij {
 patchPluginXml {
     changeNotes """
       <dl>
+        <dt>Version 1.0.1</dt>
+        <dd>added link to github page</dd>
         <dt>Version 1.0</dt>
         <dd>initial release</dd>
       </dl>"""
