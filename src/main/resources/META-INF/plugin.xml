@@ -6,8 +6,9 @@
     <p>
     This is a fork of the SimpleActions plugin by Etienne Studer, which is no longer maintained.
     </p>]]></description>
-    <version>1.0.1</version>
-    <idea-version since-build="5000"/>
+    <version>1.0.2</version>
+    <idea-version since-build="191" until-build="221.*"/>
+    <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
     <actions>
         <action id="ToolWindowsActions.HideBottomToolWindows"
