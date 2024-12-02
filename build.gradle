@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'de.dmoebius.intellij'
-version '1.0.6'
+version '1.0.7'
 
 sourceCompatibility = 17
 
@@ -16,10 +16,13 @@ repositories {
 intellij {
     version.set('2022.3')
 }
+
 patchPluginXml {
-    sinceBuild.set('223')
+    untilBuild.set("")
     changeNotes.set("""
       <dl>
+        <dt>Version 1.0.7</dt>
+        <dd>replace deprecated api</dd>
         <dt>Version 1.0.6</dt>
         <dd>fixed minor plugin configuration error</dd>
         <dt>Version 1.0.5</dt>
@@ -36,6 +39,7 @@ patchPluginXml {
         <dd>initial release</dd>
       </dl>""")
 }
+
 publishPlugin {
     token.set(intellijPublishToken)
 }

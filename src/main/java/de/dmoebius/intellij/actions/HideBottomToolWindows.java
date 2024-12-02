@@ -25,14 +25,14 @@ public class HideBottomToolWindows extends AnAction {
 
     @Override
     public void update(@NotNull AnActionEvent event) {
-        Project project = (Project) event.getDataContext().getData("project");
-        boolean enableAction = project != null && this.getVisibleBottomWindows(project).size() > 0;
+        Project project = event.getProject();
+        boolean enableAction = project != null && !this.getVisibleBottomWindows(project).isEmpty();
         event.getPresentation().setEnabled(enableAction);
     }
 
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
-        Project project = (Project) event.getDataContext().getData("project");
+        Project project = event.getProject();
         if (project != null) {
             int retry = 0;
 
@@ -71,7 +71,7 @@ public class HideBottomToolWindows extends AnAction {
             if (LOG.isDebugEnabled()) {
                 LOG.debug("Trying to hide window >" + toolWindow.getTitle() + "<");
             }
-            toolWindow.hide(null);
+            toolWindow.hide();
         }
     }
 }

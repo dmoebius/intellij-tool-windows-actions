@@ -6,7 +6,7 @@
     <p>
     This is a fork of the SimpleActions plugin by Etienne Studer, which is no longer maintained.
     </p>]]></description>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
     <idea-version since-build="223"/>
     <depends>com.intellij.modules.platform</depends>
     <depends>com.intellij.modules.lang</depends>
